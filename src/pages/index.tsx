@@ -1,17 +1,16 @@
 import { Metadata } from "next";
-import NavBar from "./NavBar";
+import NavBar from "../component/NavBar";
 import { Box, Typography } from "@mui/material";
-import Footer from "./Footer";
+import Footer from "../component/Footer";
 import React from "react";
-import Content from "./Contents";
-import "../styles/tailwind.css";
+import Content from "../component/Contents";
+// import "../styles/tailwind.css";
 
 export const metadata: Metadata = {
   title: "Helthier2gether",
 };
 
 export default function Page() {
-  debugger;
   return (
     <>
       <Box

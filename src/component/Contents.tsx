@@ -1,39 +1,12 @@
-"use client";
 import { Box, Grid, Typography, CardMedia } from "@mui/material";
-import "../styles/tailwind.css";
 import { EmailOutlined, PhoneOutlined } from "@mui/icons-material";
 import React from "react";
-import { useSearchParams } from "next/navigation";
 
 export default function Content() {
-  const aboutSection = React.useRef(null);
-  const contactSection = React.useRef(null);
-  const searchParams = useSearchParams();
-  // const search = searchParams.get('search')
-  // const { query } = router;
-
-  // React.useEffect(() => {
-  //   if (search) {
-  //     scrollToSection(search)
-  //   }
-  // }, [search]);
-
-  // const scrollToSection = (sectionId: string) => {
-  //   if (sectionId === 'about' && aboutSection.current !== null) {
-  //     setTimeout(() => {
-  //       aboutSection.current?.scrollIntoView({ behavior: 'smooth' });
-  //     }, 300)
-  //   } else if (sectionId === 'contact' && contactSection.current !== null) {
-  //     setTimeout(() => {
-  //       contactSection.current?.scrollIntoView({ behavior: 'smooth' });
-  //     }, 300)
-  //   }
-  // };
-
   return (
     <>
       <Box m={5} p={4} borderRadius={8} textAlign="center">
-        <Box ref={aboutSection} mb={8} textAlign="left">
+        <Box mb={8} textAlign="left">
           <Typography
             variant="h4"
             sx={{
@@ -96,7 +69,7 @@ export default function Content() {
             </Grid>
           </Grid>
         </Box>
-        <Box ref={contactSection} textAlign="left">
+        <Box textAlign="left">
           <Typography
             variant="h4"
             sx={{
