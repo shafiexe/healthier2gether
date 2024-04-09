@@ -45,12 +45,12 @@ const NavBar: React.FC = () => {
                 display="flex"
                 flexDirection="column"
                 alignItems="center"
-                sx={{ height: isMobile ? 50 : 120, width: isMobile ? 50 : 90 }}
+                sx={{ height: 120, width: 90 }}
               >
                 <CardMedia
                   sx={{
-                    height: isMobile ? 50 : 120,
-                    width: isMobile ? 50 : 90,
+                    height: isMobile ? 90 : 120,
+                    width: isMobile ? 90 : 90,
                   }}
                   image={"./app_logo.png"}
                   title="green iguana"

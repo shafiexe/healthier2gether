@@ -28,6 +28,9 @@ function PrivacyPolicy() {
       >
         <Box
           position={isMobile ? "relative" : "absolute"}
+          justifyContent={isMobile ? "center" : "left"}
+          display={"flex"}
+          mb={isMobile ? 1 : 0}
           sx={{ "& a": { textDecoration: "none", color: "#047a8f" } }}
         >
           <Link href="/">
@@ -36,15 +39,15 @@ function PrivacyPolicy() {
               flexDirection="column"
               alignItems="center"
               sx={{
-                height: isMobile ? 50 : 120,
-                width: isMobile ? 50 : 90,
+                height: 120,
+                width: 90,
                 ml: { xs: 5, md: 12 },
               }}
             >
               <CardMedia
                 sx={{
-                  height: isMobile ? 50 : 120,
-                  width: isMobile ? 50 : 90,
+                  height: isMobile ? 90 : 120,
+                  width: isMobile ? 90 : 90,
                 }}
                 image={"./app_logo.png"}
                 title="green iguana"
