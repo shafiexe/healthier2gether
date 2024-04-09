@@ -69,7 +69,7 @@ const NavBar: React.FC = () => {
             </Link>
           </Box>
           <Box
-            display={isMobile ? "none" : "flex"}
+            display={"flex"}
             m={3}
             sx={{
               "& h2": {
@@ -92,7 +92,7 @@ const NavBar: React.FC = () => {
             </Link>
             <Link href="?search=contact">
               <Typography component="h2" color="inherit">
-                Contact
+                Get Involved
               </Typography>
             </Link>
           </Box>

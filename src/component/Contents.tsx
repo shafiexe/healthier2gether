@@ -1,11 +1,16 @@
 import { Box, Grid, Typography, CardMedia } from "@mui/material";
 import { EmailOutlined, PhoneOutlined } from "@mui/icons-material";
 import React from "react";
+import ContactForm from "./Contact";
 
 export default function Content() {
   return (
     <>
-      <Box m={5} p={4} borderRadius={8} textAlign="center">
+      <Box
+        sx={{ m: { xs: 1, md: 5 }, p: { xs: 1, md: 5 } }}
+        borderRadius={8}
+        textAlign="center"
+      >
         <Box mb={8} textAlign="left">
           <Typography
             variant="h4"
@@ -65,7 +70,7 @@ export default function Content() {
               </Box>
             </Grid>
             <Grid item xs={12} md={6}>
-              <CardMedia component="img" image={"./contact.png"} alt="Image" />
+              <CardMedia component="img" image={"./contact1.png"} alt="Image" />
             </Grid>
           </Grid>
         </Box>
@@ -82,7 +87,7 @@ export default function Content() {
               WebkitTextFillColor: "transparent",
             }}
           >
-            Contact
+            Get Involved
           </Typography>
           <hr
             style={{
@@ -101,9 +106,14 @@ export default function Content() {
               lineHeight: "1.6",
             }}
           >
-            For more information, please contact:
+            Our health literacy application offers a direct way for users to
+            reach out to us without requiring authentication. Simply send an
+            inquiry message, and our team will respond promptly. Your engagement
+            helps us continue our mission of promoting health knowledge and
+            informed decision-making.
           </Typography>
-          <Typography
+          <ContactForm />
+          {/* <Typography
             variant="body1"
             fontWeight="bold"
             mb={1}
@@ -145,7 +155,7 @@ export default function Content() {
             >
               <a href="tel:+1 (123) 456-7890">+1 (123) 456-7890</a>
             </Typography>
-          </Box>
+          </Box> */}
         </Box>
       </Box>
     </>
