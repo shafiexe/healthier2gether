@@ -77,21 +77,25 @@ const NavBar: React.FC = () => {
                 px: 1,
                 fontSize: 22,
               },
+              "& h6": {
+                px: 1,
+                fontSize: 20,
+              },
               "& h2:hover": { textDecoration: "underline" },
             }}
           >
             <Link href="?search=about">
-              <Typography component="h2" color="inherit">
+              <Typography component={isMobile ? "h6" : "h2"} color="inherit">
                 About
               </Typography>
             </Link>
-            <Link href="#">
-              <Typography component="h2" color="inherit">
+            <Link href="/blog" target="_blank">
+              <Typography component={isMobile ? "h6" : "h2"} color="inherit">
                 Blog
               </Typography>
             </Link>
-            <Link href="?search=contact">
-              <Typography component="h2" color="inherit">
+            <Link href="?search=get-involved">
+              <Typography component={isMobile ? "h6" : "h2"} color="inherit">
                 Get Involved
               </Typography>
             </Link>

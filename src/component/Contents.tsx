@@ -2,8 +2,29 @@ import { Box, Grid, Typography, CardMedia } from "@mui/material";
 import { EmailOutlined, PhoneOutlined } from "@mui/icons-material";
 import React from "react";
 import ContactForm from "./Contact";
+import { useRouter } from "next/router";
 
 export default function Content() {
+  const router = useRouter();
+  const aboutRef: any = React.useRef(null);
+  const getInvolvedRef: any = React.useRef(null);
+
+  React.useEffect(() => {
+    const { search } = router.query;
+    // Check if the query parameter exists and matches the element's ID
+    if (search === "about") {
+      // Scroll the element into view
+      if (aboutRef.current) {
+        aboutRef.current.scrollIntoView({ behavior: "smooth" });
+      }
+    } else if (search === "get-involved") {
+      // Scroll the element into view
+      if (getInvolvedRef.current) {
+        getInvolvedRef.current.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [router.query]);
+
   return (
     <>
       <Box
@@ -13,6 +34,7 @@ export default function Content() {
       >
         <Box mb={8} textAlign="left">
           <Typography
+            ref={aboutRef}
             variant="h4"
             sx={{
               fontFamily: "Montserrat, sans-serif",
@@ -76,6 +98,7 @@ export default function Content() {
         </Box>
         <Box textAlign="left">
           <Typography
+            ref={getInvolvedRef}
             variant="h4"
             sx={{
               fontFamily: "Montserrat, sans-serif",
@@ -94,7 +117,7 @@ export default function Content() {
               borderColor: "#047a8f",
               borderWidth: "2px",
               margin: "0",
-              width: 125,
+              width: 200,
             }}
           />
           <Typography
@@ -113,49 +136,6 @@ export default function Content() {
             informed decision-making.
           </Typography>
           <ContactForm />
-          {/* <Typography
-            variant="body1"
-            fontWeight="bold"
-            mb={1}
-            sx={{
-              fontFamily: "Roboto, sans-serif",
-              fontSize: "18px",
-              lineHeight: "1.6",
-              color: "#047a8f",
-            }}
-          >
-            Kaushal Sinha
-          </Typography>
-          <Box display={"flex"} textAlign={"center"}>
-            <EmailOutlined color="primary" />
-            <Typography
-              variant="body1"
-              ml={1}
-              sx={{
-                "& a": { textDecoration: "none", color: "#047a8f" },
-                fontFamily: "Roboto, sans-serif",
-                fontSize: "18px",
-                lineHeight: "1.6",
-              }}
-            >
-              <a href="mailto:example@example.com">john.doe@example.com</a>
-            </Typography>
-          </Box>
-          <Box display={"flex"} textAlign={"center"}>
-            <PhoneOutlined color="primary" />
-            <Typography
-              variant="body1"
-              ml={1}
-              sx={{
-                "& a": { textDecoration: "none", color: "#047a8f" },
-                fontFamily: "Roboto, sans-serif",
-                fontSize: "18px",
-                lineHeight: "1.6",
-              }}
-            >
-              <a href="tel:+1 (123) 456-7890">+1 (123) 456-7890</a>
-            </Typography>
-          </Box> */}
         </Box>
       </Box>
     </>
