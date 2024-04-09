@@ -30,7 +30,7 @@ function PrivacyPolicy() {
           position={isMobile ? "relative" : "absolute"}
           justifyContent={isMobile ? "center" : "left"}
           display={"flex"}
-          mb={isMobile ? 1 : 0}
+          mb={1}
           sx={{ "& a": { textDecoration: "none", color: "#047a8f" } }}
         >
           <Link href="/">
@@ -41,7 +41,7 @@ function PrivacyPolicy() {
               sx={{
                 height: 120,
                 width: 90,
-                ml: { xs: 5, md: 12 },
+                ml: { sm: 5, md: 13 },
               }}
             >
               <CardMedia
@@ -66,14 +66,19 @@ function PrivacyPolicy() {
             </Box>
           </Link>
         </Box>
-        <Typography variant="h2" textAlign={"center"} mb={8}>
+        <Typography
+          fontSize={{ xs: 36, md: 56 }}
+          variant="h2"
+          textAlign={"center"}
+          mb={8}
+        >
           Privacy Policy
         </Typography>
         <Box sx={{ m: { xs: 2, md: 10 }, mb: 5 }}>
           <Typography sx={{ mb: 1 }}>
             <strong>Last modified</strong>: April 15, 2024
           </Typography>
-          <Typography variant="h4" gutterBottom>
+          <Typography fontSize={{ xs: 28, md: 36 }} variant="h4" gutterBottom>
             Introduction
           </Typography>
           <Typography variant="body1" paragraph>
@@ -84,7 +89,7 @@ function PrivacyPolicy() {
             we collect, use, and disclose information when you use our
             application.
           </Typography>
-          <Typography variant="h4" gutterBottom>
+          <Typography fontSize={{ xs: 28, md: 36 }} variant="h4" gutterBottom>
             Information We Collect
           </Typography>
           <Typography variant="body1" paragraph>
@@ -93,7 +98,7 @@ function PrivacyPolicy() {
             a static application, we do not require any user registration,
             login, or interaction with personal data.
           </Typography>
-          <Typography variant="h4" gutterBottom>
+          <Typography fontSize={{ xs: 28, md: 36 }} variant="h4" gutterBottom>
             Information Usage
           </Typography>
           <Typography variant="body1" paragraph>
@@ -101,14 +106,14 @@ function PrivacyPolicy() {
             purposes only. We do not track, store, or analyze any user data,
             including browsing activity or interactions with the application.
           </Typography>
-          <Typography variant="h4" gutterBottom>
+          <Typography fontSize={{ xs: 28, md: 36 }} variant="h4" gutterBottom>
             Third-Party Services
           </Typography>
           <Typography variant="body1" paragraph>
             Healthier2gether does not integrate with any third-party services,
             and we do not share any information with third parties.
           </Typography>
-          <Typography variant="h4" gutterBottom>
+          <Typography fontSize={{ xs: 28, md: 36 }} variant="h4" gutterBottom>
             Data Security
           </Typography>
           <Typography variant="body1" paragraph>
@@ -117,7 +122,7 @@ function PrivacyPolicy() {
             any personal information, the risk of data breach or unauthorized
             access is minimal.
           </Typography>
-          <Typography variant="h4" gutterBottom>
+          <Typography fontSize={{ xs: 28, md: 36 }} variant="h4" gutterBottom>
             {"Children's Privacy"}
           </Typography>
           <Typography variant="body1" paragraph>
@@ -125,7 +130,7 @@ function PrivacyPolicy() {
             and we do not knowingly collect any personal information from
             children.
           </Typography>
-          <Typography variant="h4" gutterBottom>
+          <Typography fontSize={{ xs: 28, md: 36 }} variant="h4" gutterBottom>
             Changes to this Privacy Policy
           </Typography>
           <Typography variant="body1" paragraph>
@@ -133,7 +138,7 @@ function PrivacyPolicy() {
             will be reflected on this page, and we encourage you to review this
             Privacy Policy periodically for any updates.
           </Typography>
-          <Typography variant="h4" gutterBottom>
+          <Typography fontSize={{ xs: 28, md: 36 }} variant="h4" gutterBottom>
             Contact Us
           </Typography>
           <Typography variant="body1" component={"div"} sx={{ fontSize: 18 }}>
