@@ -25,7 +25,7 @@ export default function Page() {
         <Typography
           variant="h1"
           sx={{
-            fontSize: 56,
+            fontSize: { xs: 36, md: 56 },
             fontFamily: "Montserrat, sans-serif",
             fontWeight: "bold",
             textTransform: "capitalize",
@@ -43,7 +43,7 @@ export default function Page() {
         <Typography
           variant="h2"
           sx={{
-            fontSize: 36,
+            fontSize: { xs: 26, md: 36 },
             fontFamily: "Montserrat, sans-serif",
             fontWeight: "bold",
             textAlign: "center",

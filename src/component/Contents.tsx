@@ -1,10 +1,19 @@
-import { Box, Grid, Typography, CardMedia } from "@mui/material";
+import {
+  Box,
+  Grid,
+  Typography,
+  CardMedia,
+  useMediaQuery,
+  useTheme,
+} from "@mui/material";
 import { EmailOutlined, PhoneOutlined } from "@mui/icons-material";
 import React from "react";
 import ContactForm from "./Contact";
 import { useRouter } from "next/router";
 
 export default function Content() {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   const router = useRouter();
   const aboutRef: any = React.useRef(null);
   const getInvolvedRef: any = React.useRef(null);
@@ -38,6 +47,7 @@ export default function Content() {
             variant="h4"
             sx={{
               fontFamily: "Montserrat, sans-serif",
+              fontSize: { xs: 28, md: 34 },
               fontWeight: "bold",
               textTransform: "capitalize",
               background:
@@ -53,7 +63,7 @@ export default function Content() {
               borderColor: "#0097B2",
               borderWidth: "2px",
               margin: "0",
-              width: 95,
+              width: isMobile ? 75 : 95,
             }}
           />
           <Grid container>
@@ -103,6 +113,7 @@ export default function Content() {
             sx={{
               fontFamily: "Montserrat, sans-serif",
               fontWeight: "bold",
+              fontSize: { xs: 28, md: 34 },
               textTransform: "capitalize",
               background:
                 "-webkit-linear-gradient(45deg, #176A72 0%, #70A19B 50%, teal 80%)",
@@ -117,7 +128,7 @@ export default function Content() {
               borderColor: "#047a8f",
               borderWidth: "2px",
               margin: "0",
-              width: 200,
+              width: isMobile ? 165 : 200,
             }}
           />
           <Typography
