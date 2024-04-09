@@ -164,7 +164,7 @@ function PrivacyPolicy() {
           </Typography>
         </Box>
       </Box>
-      <Footer />
+      <Footer home />
     </>
   );
 }

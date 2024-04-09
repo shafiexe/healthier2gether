@@ -4,8 +4,17 @@ import Typography from "@mui/material/Typography";
 import Link from "next/link";
 import React from "react";
 
-export const Footer = () => {
-  const footerUrls = [{ name: "Privacy Policy", url: "/privacy-policy" }];
+interface Props {
+  home?: boolean;
+}
+
+export const Footer = (props: Props) => {
+  let footerUrls = [];
+  if (props.home) {
+    footerUrls = [{ name: "Home", url: "/" }];
+  } else {
+    footerUrls = [{ name: "Privacy Policy", url: "/privacy-policy" }];
+  }
 
   return (
     <Box
@@ -48,7 +57,7 @@ export const Footer = () => {
             <Link
               style={{ color: "#fff" }}
               href={f.url}
-              target="_blank"
+              target={props.home ? "_self" : "_blank"}
               rel="noopener noreferrer"
             >
               {f.name}
