@@ -151,15 +151,6 @@ function PrivacyPolicy() {
               >
                 admin@healthliteracy.app
               </a>
-              <Typography my={1} sx={{ fontSize: 18 }}>
-                or via our number:{" "}
-              </Typography>
-              <a
-                href="tel:+1 (123) 456-7890"
-                style={{ fontSize: 18, color: "#237178" }}
-              >
-                tel:+1 (123) 456-7890
-              </a>
             </Typography>
           </Typography>
         </Box>
