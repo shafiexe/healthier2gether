@@ -102,7 +102,13 @@ const ContactForm: React.FC = () => {
                 type="submit"
                 variant="contained"
                 color="primary"
-                sx={{ textTransform: "capitalize", background: "#028386" }}
+                sx={{
+                  textTransform: "capitalize",
+                  background: "#028386",
+                  "&:hover": {
+                    background: "#70A19B",
+                  },
+                }}
               >
                 Get Involved
               </Button>
