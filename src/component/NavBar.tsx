@@ -89,7 +89,7 @@ const NavBar: React.FC = () => {
                 About
               </Typography>
             </Link>
-            <Link href="/blog" target="_blank">
+            <Link href="/blogs">
               <Typography component={isMobile ? "h6" : "h2"} color="inherit">
                 Blog
               </Typography>
