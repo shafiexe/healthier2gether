@@ -27,7 +27,6 @@ function Blogs() {
         }}
       >
         <Box
-          // position={isMobile ? "relative" : "absolute"}
           justifyContent={isMobile ? "center" : "left"}
           display={"flex"}
           mb={1}
