@@ -76,41 +76,41 @@ function Blogs() {
         </Typography>
         <Box sx={{ m: { xs: 2, md: 10 }, mb: 5 }}>
           <Typography variant="body1" paragraph>
-            In a world where healthcare is often hailed as a beacon of hope and
+            {`In a world where healthcare is often hailed as a beacon of hope and
             healing, a recent article published by Fortune sheds light on the
             intricate dynamics that underpin individuals' experiences within
             this realm. The article delves into a report released by CVS Health,
             unveiling sobering insights into the pervasive challenges of low
-            trust and health literacy that pervade the healthcare landscape.
+            trust and health literacy that pervade the healthcare landscape.`}
           </Typography>
           <Typography fontSize={{ xs: 28, md: 36 }} variant="h4" gutterBottom>
             Unveiling the Trust Deficit
           </Typography>
           <Typography variant="body1" paragraph>
-            Trust forms the cornerstone of effective healthcare delivery, yet
+            {`Trust forms the cornerstone of effective healthcare delivery, yet
             the report reveals a disconcerting deficit in trust within the
             healthcare ecosystem. Rooted in historical injustices, disparities
             in care, and the proliferation of misinformation, this erosion of
             trust poses formidable barriers to accessing care, adhering to
-            treatment plans, and engaging in preventive measures.
+            treatment plans, and engaging in preventive measures.`}
           </Typography>
           <Typography fontSize={{ xs: 28, md: 36 }} variant="h4" gutterBottom>
             Navigating the Maze of Health Literacy
           </Typography>
           <Typography variant="body1" paragraph>
-            Health literacy emerges as another pivotal determinant of health
+           {` Health literacy emerges as another pivotal determinant of health
             outcomes, encompassing individuals' ability to comprehend, process,
             and apply health information. The report underscores a troubling
             reality: a significant portion of the population grapples with
             limited health literacy, hindering their capacity to navigate
             complex medical terminology, evaluate treatment options, and
-            advocate for their health needs effectively.
+            advocate for their health needs effectively.`}
           </Typography>
           <Typography fontSize={{ xs: 28, md: 36 }} variant="h4" gutterBottom>
             Implications for Healthcare Delivery
           </Typography>
           <Typography variant="body1" paragraph>
-            The ramifications of low trust and health literacy reverberate
+            {`The ramifications of low trust and health literacy reverberate
             throughout the healthcare continuum, presenting challenges for
             providers, policymakers, and stakeholders alike. To address these
             disparities, concerted efforts are imperative. Healthcare providers
@@ -120,13 +120,13 @@ function Blogs() {
             health literacy — such as simplified health communication and
             patient education initiatives — are crucial in empowering
             individuals to become active participants in their healthcare
-            journey.
+            journey.`}
           </Typography>
           <Typography fontSize={{ xs: 28, md: 36 }} variant="h4" gutterBottom>
             Charting a Path Toward Equity
           </Typography>
           <Typography variant="body1" paragraph>
-            As we confront the stark realities illuminated by the CVS Health
+            {`As we confront the stark realities illuminated by the CVS Health
             report, it becomes evident that equitable healthcare necessitates
             dismantling barriers of distrust and low health literacy. By
             fostering trust, enhancing health literacy, and championing
@@ -134,16 +134,16 @@ function Blogs() {
             landscape that prioritizes accessibility, empowerment, and dignity
             for all. It's not merely a matter of addressing symptoms but rather,
             fostering systemic change that upholds the fundamental tenets of
-            equity and justice within healthcare.
+            equity and justice within healthcare.`}
           </Typography>
           <Typography variant="body1" paragraph>
-            In the realm of outpatient surgeries, patients now have an array of
+            {`In the realm of outpatient surgeries, patients now have an array of
             options beyond traditional hospital settings. Ambulatory Surgery
             Centers (ASCs) have emerged as popular choices for their
-            convenience, quality care, and patient-focused experience.
+            convenience, quality care, and patient-focused experience.`}
           </Typography>
           <Typography>
-            ASCs, as freestanding outpatient facilities, cater to a wide range
+            {`ASCs, as freestanding outpatient facilities, cater to a wide range
             of surgical, diagnostic, and preventive procedures. From routine
             colonoscopies to complex spine surgeries and joint replacements,
             ASCs leverage advancements in minimally invasive techniques and pain
@@ -170,7 +170,7 @@ function Blogs() {
             surgery experiences, promising optimal outcomes and peace of mind
             for those undergoing medical procedures. For anyone contemplating
             outpatient surgery, exploring the benefits of ASCs could prove
-            pivotal in ensuring a positive healthcare journey.
+            pivotal in ensuring a positive healthcare journey.`}
           </Typography>
         </Box>
       </Box>
