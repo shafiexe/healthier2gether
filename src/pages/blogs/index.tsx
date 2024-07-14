@@ -73,7 +73,6 @@ function Blogs() {
           <Typography
             fontSize={{ xs: 28, md: 36 }}
             variant="h2"
-            mb={2}
             paddingX={5}
             style={{maxWidth: 1200}}
           >
@@ -82,6 +81,9 @@ function Blogs() {
           </Typography>
         </Box>
         <Box sx={{ m: { xs: 2, md: 5 }, mb: 5 }}>
+          <Typography variant="body2" mb={1}>
+            <strong>Published On</strong>: July 10th 2024
+          </Typography>
           <Typography variant="body1" paragraph>
             {`In a world where healthcare is often hailed as a beacon of hope and
             healing, a recent article published by Fortune sheds light on the

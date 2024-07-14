@@ -6,7 +6,7 @@ import { Box, CardActionArea } from '@mui/material';
 
 const blogList = [
   {
-    publishedOn: '10th July 20214',
+    publishedOn: 'July 10th 2024',
     title: 'Unlocking The Complexities Of Healthcare: Understanding The Impact Of Low Trust And Health Literacy',
     url: '/blogs/impact_LT_&_HL'
   }
