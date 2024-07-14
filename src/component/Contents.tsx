@@ -131,21 +131,6 @@ export default function Content() {
               width: isMobile ? 165 : 200,
             }}
           />
-          <Typography
-            variant="body1"
-            mt={3}
-            sx={{
-              fontFamily: "Roboto, sans-serif",
-              fontSize: "18px",
-              lineHeight: "1.6",
-            }}
-          >
-            Our health literacy application offers a direct way for users to
-            reach out to us without requiring authentication. Simply send an
-            inquiry message, and our team will respond promptly. Your engagement
-            helps us continue our mission of promoting health knowledge and
-            informed decision-making.
-          </Typography>
           <ContactForm />
         </Box>
       </Box>

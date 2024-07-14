@@ -2,7 +2,7 @@ import * as React from "react";
 import Typography from "@mui/material/Typography";
 import { Box, CardMedia, Link, useMediaQuery, useTheme } from "@mui/material";
 import Footer from "@/component/Footer";
-import BlogCards from "./cards";
+import BlogCards from "../cards";
 
 function Blogs() {
   const theme = useTheme();
@@ -49,7 +49,7 @@ function Blogs() {
                   height: isMobile ? 90 : 120,
                   width: isMobile ? 90 : 90,
                 }}
-                image={"./app_logo.png"}
+                image={"../app_logo.png"}
                 title="green iguana"
               />
               {!isMobile && (
