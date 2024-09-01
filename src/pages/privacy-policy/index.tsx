@@ -11,8 +11,10 @@ function PrivacyPolicy() {
     <>
       <Box
         sx={{
-          "& p": { fontSize: 18 },
-          "& h2, h4": {
+          "& p": { fontSize: 14 },
+          "& h6": { fontSize: 18 },
+          "& h4": { fontSize: 24 },
+          "& h4, h6": {
             fontFamily: "Montserrat, sans-serif",
             fontWeight: "bold",
             textTransform: "capitalize",
@@ -68,86 +70,87 @@ function PrivacyPolicy() {
         </Box>
         <Typography
           fontSize={{ xs: 36, md: 56 }}
-          variant="h2"
+          variant="h4"
           textAlign={"center"}
           mb={8}
         >
           Privacy Policy
         </Typography>
         <Box sx={{ m: { xs: 2, md: 10 }, mb: 5 }}>
-          <Typography sx={{ mb: 1 }}>
-            <strong>Last modified</strong>: April 15, 2024
+          <Typography sx={{ mb: 1, mt: 15 }}>
+            <strong>Last modified</strong>: September 01, 2024
           </Typography>
-          <Typography fontSize={{ xs: 28, md: 36 }} variant="h4" gutterBottom>
+          <Typography fontSize={{ xs: 28, md: 36 }} variant="h6" gutterBottom>
             Introduction
           </Typography>
           <Typography variant="body1" paragraph>
-            Thank you for using Healthier2gether, a static application designed
-            to provide health insurance usage guidance and tips. Your privacy
-            and trust are important to us, and we are committed to protecting
-            the information you share with us. This Privacy Policy explains how
-            we collect, use, and disclose information when you use our
-            application.
+            This Privacy Policy is issued by Healthier2gether LLC, the entity
+            responsible for the HealthLit application.
           </Typography>
-          <Typography fontSize={{ xs: 28, md: 36 }} variant="h4" gutterBottom>
+          <Typography fontSize={{ xs: 28, md: 36 }} variant="h6" gutterBottom>
             Information We Collect
           </Typography>
           <Typography variant="body1" paragraph>
-            Healthier2gether does not collect any personal information,
-            including customer contact details or authentication credentials. As
-            a static application, we do not require any user registration,
-            login, or interaction with personal data.
+            Healthier2gether LLC does not collect any data.
           </Typography>
-          <Typography fontSize={{ xs: 28, md: 36 }} variant="h4" gutterBottom>
+          <Typography fontSize={{ xs: 28, md: 36 }} variant="h6" gutterBottom>
             Information Usage
           </Typography>
           <Typography variant="body1" paragraph>
-            The information presented in Healthier2gether is for informational
-            purposes only. We do not track, store, or analyze any user data,
-            including browsing activity or interactions with the application.
+            Healthier2gether LLC does not collect any data.
           </Typography>
-          <Typography fontSize={{ xs: 28, md: 36 }} variant="h4" gutterBottom>
+          <Typography fontSize={{ xs: 28, md: 36 }} variant="h6" gutterBottom>
             Third-Party Services
           </Typography>
           <Typography variant="body1" paragraph>
             Healthier2gether does not integrate with any third-party services,
-            and we do not share any information with third parties.
+            and Healthier2gether LLC do not share any information with third
+            parties.
           </Typography>
-          <Typography fontSize={{ xs: 28, md: 36 }} variant="h4" gutterBottom>
+          <Typography fontSize={{ xs: 28, md: 36 }} variant="h6" gutterBottom>
             Data Security
           </Typography>
           <Typography variant="body1" paragraph>
-            We implement security measures to protect any information that may
-            be stored within the application. However, since we do not collect
-            any personal information, the risk of data breach or unauthorized
-            access is minimal.
+            Healthier2gether LLC implement security measures to protect any
+            information that may be stored within the application. However,
+            since Healthier2gether LLC do not collect any personal information,
+            the risk of data breach or unauthorized access is minimal.
           </Typography>
-          <Typography fontSize={{ xs: 28, md: 36 }} variant="h4" gutterBottom>
+          <Typography fontSize={{ xs: 28, md: 36 }} variant="h6" gutterBottom>
             {"Children's Privacy"}
           </Typography>
           <Typography variant="body1" paragraph>
             Healthier2gether is not directed to children under the age of 13,
-            and we do not knowingly collect any personal information from
-            children.
+            and Healthier2gether LLC do not knowingly collect any personal
+            information from children.
           </Typography>
-          <Typography fontSize={{ xs: 28, md: 36 }} variant="h4" gutterBottom>
+          <Typography fontSize={{ xs: 28, md: 36 }} variant="h6" gutterBottom>
             Changes to this Privacy Policy
           </Typography>
           <Typography variant="body1" paragraph>
-            We may update this Privacy Policy from time to time. Any changes
-            will be reflected on this page, and we encourage you to review this
-            Privacy Policy periodically for any updates.
+            Healthier2gether LLC may update this Privacy Policy from time to
+            time. Any changes will be reflected on this page, and
+            Healthier2gether LLC encourage you to review this Privacy Policy
+            periodically for any updates.
           </Typography>
-          <Typography fontSize={{ xs: 28, md: 36 }} variant="h4" gutterBottom>
-            Contact Us
+          <Typography fontSize={{ xs: 28, md: 36 }} variant="h6" gutterBottom>
+            About Us
           </Typography>
-          <Typography variant="body1" component={"div"} sx={{ fontSize: 18 }}>
-            If you have any questions or concerns about this Privacy Policy or
-            our practices, please contact us at:
-            <Typography component={"div"}>
+          <Typography variant="body1" component={"div"} sx={{ fontSize: 14 }}>
+            Healthier2gether is a nonprofit organization committed to enhancing
+            health literacy among K-12 students in Georgia. Healthier2gether LLC
+            believe that by equipping young people with the knowledge and skills
+            to understand their health, Healthier2gether LLC can empower them to
+            make informed decisions for a lifetime of well-being.
+            <Typography
+              component={"div"}
+              style={{ marginTop: 15, fontSize: 14 }}
+            >
+              For any questions about this privacy policy or our data practices,
+              please contact us at
               <a
                 href="mailto:admin@healthliteracy.app"
-                style={{ fontSize: 18, color: "#237178" }}
+                style={{ marginLeft: 5, fontSize: 14, color: "#237178" }}
               >
                 admin@healthliteracy.app
               </a>

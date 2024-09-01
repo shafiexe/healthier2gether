@@ -66,18 +66,18 @@ function Blogs() {
             </Box>
           </Link>
         </Box>
-        <Box sx={{ml: {md: 3}}}>
+        <Box sx={{ ml: { md: 3 } }}>
           <BlogCards />
         </Box>
-        <Box display={'flex'} textAlign={"center"} justifyContent={'center'}>
+        <Box display={"flex"} textAlign={"center"} justifyContent={"center"}>
           <Typography
             fontSize={{ xs: 28, md: 36 }}
             variant="h2"
             paddingX={5}
-            style={{maxWidth: 1200}}
+            style={{ maxWidth: 1200 }}
           >
-            Unlocking the Complexities of Healthcare: Understanding the Impact of
-            Low Trust and Health Literacy
+            Unlocking the Complexities of Healthcare: Understanding the Impact
+            of Low Trust and Health Literacy
           </Typography>
         </Box>
         <Box sx={{ m: { xs: 2, md: 5 }, mb: 5 }}>
@@ -107,7 +107,7 @@ function Blogs() {
             Navigating the Maze of Health Literacy
           </Typography>
           <Typography variant="body1" paragraph>
-           {` Health literacy emerges as another pivotal determinant of health
+            {` Health literacy emerges as another pivotal determinant of health
             outcomes, encompassing individuals' ability to comprehend, process,
             and apply health information. The report underscores a troubling
             reality: a significant portion of the population grapples with

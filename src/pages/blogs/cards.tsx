@@ -1,16 +1,17 @@
-import * as React from 'react';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import Typography from '@mui/material/Typography';
-import { Box, CardActionArea } from '@mui/material';
+import * as React from "react";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import Typography from "@mui/material/Typography";
+import { Box, CardActionArea } from "@mui/material";
 
 const blogList = [
   {
-    publishedOn: 'July 10th 2024',
-    title: 'Unlocking The Complexities Of Healthcare: Understanding The Impact Of Low Trust And Health Literacy',
-    url: '/blogs/impact_LT_&_HL'
-  }
-]
+    publishedOn: "July 10th 2024",
+    title:
+      "Unlocking The Complexities Of Healthcare: Understanding The Impact Of Low Trust And Health Literacy",
+    url: "/blogs/impact_LT_&_HL",
+  },
+];
 
 export default function BlogCards() {
   return (
